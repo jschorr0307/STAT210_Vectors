@@ -1,0 +1,74 @@
+Ch. 20 Vectors
+================
+Jerri Schorr
+12-03-2019
+
+##### **Chapter 20**
+
+-   Vectors are underlying components of tibbles
+
+    -   Most functions work with vectors
+
+##### **Chapter 20.1**
+
+``` r
+library(tidyverse)
+```
+
+    ## ── Attaching packages ─────────────────────────────────────────── tidyverse 1.2.1 ──
+
+    ## ✔ ggplot2 3.2.1     ✔ purrr   0.2.5
+    ## ✔ tibble  2.1.3     ✔ dplyr   0.8.3
+    ## ✔ tidyr   1.0.0     ✔ stringr 1.3.1
+    ## ✔ readr   1.1.1     ✔ forcats 0.3.0
+
+    ## ── Conflicts ────────────────────────────────────────────── tidyverse_conflicts() ──
+    ## ✖ dplyr::filter() masks stats::filter()
+    ## ✖ dplyr::lag()    masks stats::lag()
+
+##### **Chapter 20.2**
+
+-   There are two types of vectors:
+
+    -   Atomic vectors, of which there are six types: logical, integer, double, character, complex, and raw. Integer and double vectors are collectively known as numeric vectors.
+
+    -   Lists, which are sometimes called recursive vectors because lists can contain other lists.
+
+-   NULL represents an empty vector
+-   NA represents an empty value
+
+-   Every vector has a type and length
+
+##### **Chapter 20.3**
+
+-   The four most important types of atomic vector are logical, integer, double, and character.
+
+    -   Raw and complex are rarely used during a data analysis, so I won’t discuss them here.
+
+##### **Chapter 20.4**
+
+##### **Chapter 20.5**
+
+-   Lists are a step up in complexity from atomic vectors, because lists can contain other lists
+
+    -   A very useful tool for working with lists is `str()` because it focusses on the structure, not the contents.
+
+##### **Chapter 20.6**
+
+-   Any vector can contain arbitrary additional metadata through its attributes.
+
+    -   Names are used to name the elements of a vector.
+
+    -   Dimensions (dims, for short) make a vector behave like a matrix or array.
+
+    -   Class is used to implement the S3 object oriented system.
+
+##### **Chapter 20.7**
+
+-   Factors and dates are augmented vectors
+
+    -   Factors are designed to represent categorical data that can take a fixed set of possible values
+
+    -   Dates in R are numeric vectors that represent the number of days since 1 January 1970.
+
+    -   Tibbles are augmented lists
